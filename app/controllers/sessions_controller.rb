@@ -15,10 +15,10 @@ class SessionsController < ApplicationController
   def destroy#route: post '/logout'
     if session[:name] == nil
       redirect_to '/'
-    else 
+    else
       session.delete :name
       redirect_to '/'
-    end 
+    end
   end
 
 end
